@@ -18,6 +18,9 @@ def get_unigue_manufacturer(contract_id: int) -> QuerySet[int]:
 
     1. способ через property модели
     2. функция get_unigue_manufacturer
+
+    Для загрузки данных в БД исрользуй команду python manage.py data
+
     """
 
     credit_application_id = CreditApplication.objects.get(contract_id=contract_id).id
